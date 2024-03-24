@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <title>corruption reporter</title>     
+    <link href="assets/images/icons/icon.png" rel="icon" type="image/png"> 
+    <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css"> 
+    <link href="assets/css/central.css" rel="stylesheet" type="text/css"> 
+    <link href="assets/css/dialog.css" rel="stylesheet" type="text/css"> 
+    <link href="assets/css/reports-card.css" rel="stylesheet" type="text/css"> 
+    <link href="assets/css/user.css" rel="stylesheet" type="text/css">    
+  </head>   
+  <body class="bg-grey"> 
+    <nav class="navigation" data-pg-name="Navigation Bar" data-pg-collapsed> 
+      <div class="wrapper" data-pg-name="Wrapper"> 
+        <div class="clear-float"> 
+          <a class="nav-brand text-brand float-left" href="index.html" target="_blank">AlertMaster</a> 
+          <ul class="nav-section float-right nav-shown nav-hidden transition" data-pg-name="Nav Section" data-pg-collapsed id="nav-section" onmouseenter="setMenuHidable(false)" onmouseleave="setMenuHidable(true)"> 
+            <li data-pg-name="Nav Item"> 
+              <a href="admin-reports.html">Reports</a> 
+            </li>             
+            <li data-pg-name="Nav Item"> 
+              <a href="user-reports.html">Users</a> 
+            </li>             
+            <li data-pg-name="Nav Item"> 
+              <a href="admin-login.html">Logout</a> 
+            </li>             
+          </ul>           
+          <button class="menu-bar" onclick="toggleMenu()" onblur="hideMenu()" data-pg-collapsed> 
+            <i class="fa fa-align-justify"></i> 
+          </button>           
+        </div>         
+      </div>       
+    </nav>     
+    <section class="login-wrapper top-space account-wrapper" data-pg-name="Dashboard" data-pg-collapsed> 
+      <section class="heading" data-pg-collapsed> 
+        <div class="wrapper" data-pg-name="Wrapper" data-pg-collapsed> 
+          <div class="bread" data-pg-collapsed> 
+            <a href="admin-reports.html">Home</a> 
+            <i class="fa fa-angle-right"></i> 
+            <a href="user-reports.html">Allice</a> 
+            <i class="fa fa-angle-right"></i> 
+            <a class="active">Misappropriation of Budget</a> 
+          </div>           
+        </div>         
+      </section>       
+      <section> 
+        <div class="wrapper" data-pg-name="Wrapper"> 
+          <header class="page-title"> 
+</header>           
+          <div class="report-item card card-sm max-width-800" id="id1"> 
+            <div class="profile-img" title="Verified Citizen"> 
+              <img src="assets/images/profiles/photo-1467400492058-1aad44d4bcd6.jpg" width="50" height="50" /> 
+              <span class="report-item-verified" data-pg-collapsed><i class="fa fa-check"></i></span> 
+            </div>             
+            <div class="report-item-content"> 
+              <h5>Allice</h5> 
+              <span class="report-item-date" data-pg-collapsed><i class="fa fa-calendar"></i> 10 min ago,</span> 
+              <span class="report-item-date report-item-location" data-pg-collapsed><i class="fa fa-map-marker"></i> Banglore</span> 
+              <span class="report-item-date report-item-location" data-pg-collapsed title="1 image, 1 video">2 <i class="fa fa-paperclip fa-rotate-90 fa-flip-vertical"></i></span> 
+              <span class="badge-citizen badge-status status-badge-investigating" data-pg-collapsed><i class="fa fa-info-circle"></i>Investigating</span> 
+              <h1 class="report-title"><i class="fa flag fa-bullhorn flag-intervention" title="Intervention report requiring government attention"></i></h1> 
+              <p data-pg-collapsed>Several projects initiated by the municipality, such as infrastructure development, social welfare programs, and public health initiatives, have either been stalled or completed with substandard materials despite the allocation of significant budgetary funds... </p> 
+              <div class="collapse in" id="in"> 
+                <div class="row" data-pg-name="Row"> 
+                  <div class="column column-md-4" data-pg-name="Column"> 
+                    <a href="assets/images/profiles/budget.jpg" class="media-item" data-zoom> 
+                      <img src="assets/images/profiles/budget.jpg" /> 
+                      <i class="fa fa-search-plus"></i> 
+                    </a>                     
+                  </div>                                                                        
+                  <div class="column column-md-4" data-pg-name="Column"> 
+                    <a href="assets/images/profiles/corrpution1.jpg" class="media-item" data-zoom> 
+                      <img src="assets/images/profiles/corruption1.jpg" /> 
+                      <i class="fa fa-search-plus"></i> 
+                    </a>                     
+                  </div>                   
+                </div>                 
+              </div>               
+              <a class="report-item-link" href="#in" data-text-less='Show less' data-text-more="Read more" data-collapse>Read more.... <i class="fa fa-angle-double-right"></i></a> 
+            </div>                          
+          </div>           
+        </div>         
+      </section>       
+    </section>     
+       
+    <script src="assets/js/wigi.js" type="text/javascript"></script>     
+    <script src="assets/js/dialog.js" type="text/javascript"></script>     
+    <script src="assets/js/common.js" type="text/javascript"></script>     
+  </body>   
+</html>

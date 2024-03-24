@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Register on iReporter|Easily report cases of corruption and areas that needs government intervention|Andela Developer Challenge</title>     
+    <link href="assets/images/icons/icon.png" rel="icon" type="image/png"> 
+    <link href="assets/css/central.css" rel="stylesheet" type="text/css"> 
+    <link href="assets/css/dialog.css" rel="stylesheet" type="text/css"> 
+    <link href="assets/css/form.css" rel="stylesheet" type="text/css"> 
+    <link href="assets/css/login.css" rel="stylesheet" type="text/css"> 
+    <meta name="theme-color" content="#009f8b"> 
+
+  <body> 
+    <nav class="navigation" data-pg-name="Navigation Bar" data-pg-collapsed> 
+      <div class="wrapper" data-pg-name="Wrapper"> 
+        <div class="clear-float"> 
+          <a href="index.html" class="nav-brand text-brand float-left">AlertMaster</a> 
+          <ul class="nav-section float-right nav-shown nav-hidden transition" data-pg-name="Nav Section" data-pg-collapsed id="nav-section" onmouseenter="setMenuHidable(false)" onmouseleave="setMenuHidable(true)"> 
+            <li data-pg-name="Nav Item"> 
+              <a href="index.html">Home</a> 
+            </li>             
+            <li data-pg-name="Nav Item"> 
+              <a href="about.html">About</a> 
+            </li>             
+            <li data-pg-name="Nav Item" data-pg-collapsed> 
+              <a href="sign-in.html">Sign in</a> 
+            </li>             
+            <li data-pg-name="Nav Item" class="btn-cta" data-pg-collapsed> 
+              <a href="sign-up.html" class="btn-brand transition">Report a case</a> 
+            </li>             
+          </ul>           
+          <button class="menu-bar" onclick="toggleMenu()" onblur="hideMenu()" data-pg-collapsed> 
+            <i class="fa fa-align-justify"></i> 
+          </button>           
+        </div>         
+      </div>       
+    </nav>     
+    <section class="login-wrapper bg-grey top-space" data-pg-name="How it Works"> 
+      <form class="wrapper" data-pg-name="Wrapper" onsubmit="return register(this)" novalidate> 
+        <div class="card login-form login-form-lg" data-pg-collapsed> 
+          <h1 class="text-brand">WELCOME TO AlertMaster</h1> 
+          <p data-pg-collapsed>Let's help you quickly report cases of corruption and issues that need government attention to the appropriate authorities.<span> Register by filling out the form below to get started.</span></p> 
+          <small class="form-instructions">* All fields are required</small> 
+          <div class="form-wrapper" data-pg-collapsed> 
+            <label>First Name *</label>             
+            <input class="form-element" type="text" name="firstname" required> 
+          </div>           
+          <div class="form-wrapper" data-pg-collapsed> 
+            <label>Last Name *</label>             
+            <input class="form-element" type="text" name="lastname" required> 
+          </div>           
+          <!-- <div class="form-wrapper" data-pg-collapsed> 
+            <label>Other Names 
+              <small>(optional)</small> 
+            </label>             
+            <input class="form-element" type="text" required name="othernames"> 
+          </div>            -->
+          <div class="form-wrapper" data-pg-collapsed> 
+            <label>Phone Number *</label>             
+            <input class="form-element" type="tel" name="phoneNumber" required> 
+          </div>           
+          <div class="form-wrapper" data-pg-collapsed> 
+            <label>Email Address *</label>             
+            <input class="form-element" type="email" name="email" required> 
+          </div>           
+        </div>         
+        <div class="card login-form login-form-lg" data-pg-collapsed> 
+          <div class="form-wrapper" data-pg-collapsed> 
+            <label>Choose a Username </label>             
+            <input class="form-element" type="text" name="username" required> 
+          </div>           
+          <div class="form-wrapper" data-pg-collapsed> 
+            <label>Create a Password</label>             
+            <input class="form-element" type="password" name="password" required> 
+          </div>           
+          <div class="checkbox"> 
+            <label> 
+              <input type="checkbox" required id="termsCheckedBox"> 
+              I agree to the 
+              <a href="#" class="forgot-password">Terms and Conditions</a> 
+            </label>             
+          </div>           
+          <button class="btn-brand btn-submit" type="submit"> 
+            <span>Register Now</span> 
+            <img src="assets/images/resources/loader-light.gif" width="12" class="hidden"> 
+          </button>           
+        </div>         
+        <p class="login-register-link login-form-lg" data-pg-collapsed>Already registered? <a href="sign-in.html">Sign in</a></p> 
+      </form>       
+    </section>     
+       
+    <!-- Placed at the end of the document so the pages load faster -->     
+    <script src="assets/js/wigi.js" type="text/javascript"></script>     
+    <script src="assets/js/dialog.js" type="text/javascript"></script>     
+    <script src="assets/js/common.js" type="text/javascript"></script>     
+    <script src="assets/js/signup.js" type="text/javascript"></script>     
+  </body>   
+</html>

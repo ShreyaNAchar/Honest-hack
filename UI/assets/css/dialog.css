@@ -1,0 +1,334 @@
+
+
+.dialog
+{
+    padding: 20px;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    font-size: 14px;
+    position: relative;
+    background-color: #00b19e;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: opacity 300ms linear;
+}
+
+.dialog.error
+{
+    background-color: #e44c52;
+}
+
+.dialog .close
+{
+    margin-left: 20px;
+    color: inherit;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.dialog-parent
+{
+    position: fixed;
+    right: 0px;
+    top: 10px;
+    overflow: hidden;
+    z-index: 2000;
+    max-width: 250px;
+    width: 100%;
+}
+
+.dialog-hidden
+{
+    opacity: 0;
+}
+
+.pop
+{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 3000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    overflow-y: auto;
+}
+
+.pop-dialog-shown, .pop-modal-shown
+{
+    overflow: hidden;
+}
+
+.pop-dialog-shown .pop-dialog, .pop-modal-shown .pop-modal
+{
+    display: block;
+}
+
+.pop-inner
+{
+    background-color: white;
+    max-width: 480px;
+    border-radius: 5px;
+    padding: 35px 20px 25px 20px;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 200ms linear;
+    transform: translateY(-300px);
+    opacity: 0;
+}
+
+.pop-title
+{
+    font-size: 26px;
+    color: #201f1f;
+    text-align: center;
+}
+
+.pop .pop-icon .fa, .pop .pop-circle, .pop-inner
+{
+    color: #3085d6;
+}
+
+.pop-inner.error .fa, .pop-inner.error .pop-circle, .pop-inner.error .pop-inner
+{
+    color: #f27474;
+}
+
+.pop-text
+{
+    color: #464444;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    line-height: 1.3em;
+    font-size: 16px;
+    text-align: center;
+}
+
+.pop .pop-inner .pop-icon .fa
+{
+    font-size: 80px;
+    margin-bottom: 30px;
+    background-color: transparent;
+}
+
+.pop-circle
+{
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid transparent;
+    position: absolute;
+    top: -2px;
+    border-right: 40px solid;
+    left: -3px;
+    display: none;
+}
+
+.pop-inner.success .pop-icon .fa, .pop-inner.success .pop-inner-circle, .pop-inner.success .pop-inner
+{
+    color: #00b19e;
+}
+
+.pop-footer
+{
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.pop-footer .btn-brand
+{
+    background-color: #3085d6;
+    min-width: 100px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.pop-backdrop
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    cursor: default;
+    right: 0px;
+}
+
+.pop-showing
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.pop-inner.question .fa, .pop-inner.question .pop-inner-circle, .pop-inner.question .pop-inner
+{
+    color: #f18208;
+}
+
+.pop-inner .btn-secondary
+{
+    background-color: rgba(48, 133, 214, 0.12);
+    color: #3085d6;
+}
+
+.pop-inner.error .btn-brand
+{
+    background-color: #f27474;
+}
+
+.pop-inner.error .btn-secondary
+{
+    color: #f27474;
+    background-color: rgba(242, 116, 116, 0.09);
+}
+
+.pop-inner.question .btn-brand
+{
+    background-color: #f18208;
+}
+
+.pop-inner.question .btn-secondary
+{
+    color: #f18208;
+    background-color: rgba(241, 130, 8, 0.14);
+}
+
+.pop .pop-inner .btn-brand
+{
+    background-color: #00b19e;
+}
+
+.pop .pop-inner .btn-secondary
+{
+    color: #00b19e;
+    background-color: rgba(0, 177, 158, 0.09);
+}
+
+.pop ul
+{
+    text-align: left;
+    display: inline-block;
+}
+
+.pop ul li
+{
+    font-size: 16px;
+    line-height: 1.3em;
+    margin-bottom: 5px;
+}
+
+.pop ul li span
+{
+    color: #464444;
+    display: inline-block;
+}
+
+.pop .pop-inner ul li .fa
+{
+    font-size: inherit;
+    top: 1px;
+}
+
+.dialog p::first-letter
+{
+    text-transform: uppercase;
+}
+
+.dialog p
+{
+    margin-bottom: 0px;
+    font-size: inherit;
+}
+
+.pop-inner.success .pop-icon .fa, .pop-inner.success .pop-inner-circle, .pop-inner.success .pop-inner
+{
+    color: #00b19e;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 50px;
+    position: relative;
+}
+
+.pop-inner.success .pop-icon .fa::after
+{
+    content: "";
+    position: absolute;
+    border: 2px dashed;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    border-radius: 100%;
+}
+
+.pop-lg .pop-inner
+{
+    max-width: 760px;
+}
+
+.pop-icon
+{
+    text-align: center;
+}
+
+.pop-wrapper
+{
+    position: relative;
+    padding: 30px 7px;
+    min-height: 100vh;
+}
+
+.pop-modal
+{
+    z-index: 4000;
+    padding: 0px;
+    display: none;
+}
+
+@media (min-width:600px)
+{
+    .pop-wrapper
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.close
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    padding: 5px;
+    color: rgba(222, 68, 55, 0.64);
+    z-index: 3;
+}
+
+.pop-footer-dashed
+{
+    border-top: 1px dashed rgba(0,0,0,0.2);
+}
+
+.pop-dialog .pop-wrapper
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
