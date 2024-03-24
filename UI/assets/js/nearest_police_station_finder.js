@@ -1,6 +1,6 @@
 // Function to fetch nearest police station using Google Maps Places API
 async function findNearestPoliceStation(latitude, longitude) {
-    const apiKey = 'AIzaSyDonfh3Mmott1scvYYHADmM_U_wFgiIP7g'; // Replace with your own Google Maps API key
+    const apiKey = 'Your_api_key'; // Replace with your own Google Maps API key
     const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&radius=500&type=police&key=${apiKey}`;
 
     try {
